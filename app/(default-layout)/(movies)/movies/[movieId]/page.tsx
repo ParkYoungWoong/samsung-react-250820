@@ -26,7 +26,7 @@ export default async function MovieDetails({
 
   return (
     <>
-      <h1>{movie.Title}</h1>
+      <h1 className="text-[50px] font-bold">{movie.Title}</h1>
       <Link href={`/poster/${movieId}`}>
         <Image
           src={movie.Poster}

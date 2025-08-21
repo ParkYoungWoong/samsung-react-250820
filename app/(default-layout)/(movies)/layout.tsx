@@ -1,14 +1,16 @@
+import Modal from '@/components/Modal'
+
 export default function Layout({
   children,
-  p
+  poster
 }: {
   children: React.ReactNode
-  p: React.ReactNode
+  poster: React.ReactNode
 }) {
   return (
     <>
       {children}
-      {p}
+      {poster}
     </>
   )
 }
