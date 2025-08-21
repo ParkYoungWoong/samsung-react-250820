@@ -17,7 +17,7 @@ export default async function MovieDetails({
 }) {
   const { movieId } = await params
   const { plot = 'short' } = await searchParams
-  await new Promise(resolve => setTimeout(resolve, 2000))
+  // await new Promise(resolve => setTimeout(resolve, 2000))
   const { data: movie } = await axios<Movie>(
     `https://omdbapi.com?apikey=7035c60c&i=${movieId}&plot=${plot}`
   )
