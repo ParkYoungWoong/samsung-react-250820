@@ -1,5 +1,3 @@
-import Modal from '@/components/Modal'
-
 export default function Layout({
   children,
   poster
