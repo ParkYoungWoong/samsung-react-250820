@@ -1,5 +1,6 @@
 import axios from 'axios'
 import Image from 'next/image'
+import Link from 'next/link'
 
 interface Movie {
   Title: string
@@ -26,12 +27,14 @@ export default async function MovieDetails({
   return (
     <>
       <h1>{movie.Title}</h1>
-      <Image
-        src={movie.Poster}
-        alt={movie.Title}
-        width={700}
-        height={700 * 1.5}
-      />
+      <Link href={`/poster/${movieId}`}>
+        <Image
+          src={movie.Poster}
+          alt={movie.Title}
+          width={700}
+          height={700 * 1.5}
+        />
+      </Link>
       <p>{movie.Plot}</p>
     </>
   )
