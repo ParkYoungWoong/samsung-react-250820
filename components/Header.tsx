@@ -8,7 +8,7 @@ export default function Header() {
       <Link href="/signin">Sign In</Link>
       <Link href="/movies/tt4520988?plot=full">Sample Movie</Link>
       <Link href="/async">Async</Link>
-      <Link href="/paralles">Paralles</Link>
+      <Link href="/parallel">Parallel</Link>
     </header>
   )
 }
